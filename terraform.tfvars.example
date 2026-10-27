@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars (ignored by Git) to override the defaults.
+kube_context = "minikube"
+
+# environments = {
+#   dev  = { pods = "10", requests_cpu = "2", requests_memory = "2Gi" }
+#   prod = { pods = "10", requests_cpu = "2", requests_memory = "2Gi" }
+# }

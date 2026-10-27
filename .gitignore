@@ -1,0 +1,19 @@
+# Terraform state can contain sensitive data: it must never reach Git.
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Provider binaries and local cache
+.terraform/
+
+# Local variable files (may hold private values). The example file is allowed.
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+# Local kubeconfig copies
+kubeconfig*
+*.kubeconfig
+
+# NOTE: do NOT ignore .terraform.lock.hcl. Commit it so everyone gets the same provider build.
